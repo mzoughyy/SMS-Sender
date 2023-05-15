@@ -9,8 +9,8 @@ class Score(models.Model):
         return str(self.result)
     def save(self,*args,**kwargs):
         if self.result <70:
-            account_sid = 'XXXXXXXXXXXXXXXXXXXXXX'
-            auth_token = 'XXXXXXXXXXXXXXXXXXXXXXX'
+            account_sid = 'XXXXXXXXXX'
+            auth_token = 'XXXXXXXXX'
             client = Client(account_sid, auth_token)
 
             message = client.messages.create(
